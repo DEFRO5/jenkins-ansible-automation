@@ -1,0 +1,16 @@
+- name: Nginx server deployment
+  hosts: all
+  become: yes
+  become_user: root
+  become_method: sudo
+  gather_facts: yes
+  vars:
+    ansible_ssh_private_key_file: #Enter your private key location
+  roles:
+    - role: nginx
+  handlers:
+  - name: Restart NGINX
+    service:
+      name: nginx
+      state: restarted
+
