@@ -10,7 +10,8 @@ This project demonstrates the use of Jenkins along with Ansible for automating t
 
 ## 2.Inventory Setup:
     Fill the inventories file for both prod and testing environments. 
-    In the inventory file, set ansible_host to the IP address and ansible_user to the username of the target machines.
+    In the inventory file, set ansible_host to the IP address and ansible_user to the username 
+    of the target machines.
 
 ## 3.Jenkinsfile Configuration:
     Update the Jenkinsfile with the appropriate values for the following variables:
