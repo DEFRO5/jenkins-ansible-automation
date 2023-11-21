@@ -5,10 +5,12 @@ This project demonstrates the use of Jenkins along with Ansible for automating t
 # Prerequisites
 
 ## 1.Jenkins Installation:
-    Ensure Jenkins is installed, and the Ansible plugin is installed. If not, follow the official Jenkins installation guide and install the Ansible plugin.
+    Ensure Jenkins is installed, and the Ansible plugin is installed.
+    If not, follow the official Jenkins installation guide and install the Ansible plugin.
 
 ## 2.Inventory Setup:
-    Fill the inventories file for both prod and testing environments. In the inventory file, set ansible_host to the IP address and ansible_user to the username of the target machines.
+    Fill the inventories file for both prod and testing environments. 
+    In the inventory file, set ansible_host to the IP address and ansible_user to the username of the target machines.
 
 ## 3.Jenkinsfile Configuration:
     Update the Jenkinsfile with the appropriate values for the following variables:
